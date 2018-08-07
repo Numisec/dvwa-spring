@@ -12,7 +12,15 @@ Reposiroty
 
 ## Support
 1. Vagrant
+```
+vagrant up
+vagrant provision
+```
 2. Docker Container
+```
+sudo docker build --no-cache=true -t devsecopsat/dvwa-spring .
+sudo docker run -d --name dvwa -p 8080:8080 devsecopsat/dvwa-spring:latest
+```
 3. Jenkins pipeline - build.groovy
 
 ## Build .war
@@ -20,6 +28,8 @@ Reposiroty
 
 ## Manual Run
 `mvn spring-boot:run`
+or
+`java -jar target/www-0.0.1-SNAPSHOT.jar`
 
 ## Login URL
 http://localhost:8080
