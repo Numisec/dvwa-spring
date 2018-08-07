@@ -10,19 +10,6 @@ Reposiroty
 1. Maven
 2. Java - Java Spring
 
-## Support
-1. Vagrant
-```
-vagrant up
-vagrant provision
-```
-2. Docker Container
-```
-sudo docker build --no-cache=true -t devsecopsat/dvwa-spring .
-sudo docker run -d --name dvwa -p 8080:8080 devsecopsat/dvwa-spring:latest
-```
-3. Jenkins pipeline - build.groovy
-
 ## Build .war
 `mvn -B -f pom.xml install`
 
@@ -42,5 +29,18 @@ http://localhost:8080
 | user1 | user1 |
 | user2 | user2 |
 | user3 | user3 |
+
+## Support
+1. Vagrant
+```
+vagrant up
+vagrant provision
+```
+2. Docker Container
+```
+sudo docker build --no-cache=true -t devsecopsat/dvwa-spring .
+sudo docker run -d --name dvwa -p 8080:8080 devsecopsat/dvwa-spring:latest
+```
+3. Jenkins pipeline - build.groovy
 
 ## Vulnerable list
