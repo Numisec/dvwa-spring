@@ -3,13 +3,17 @@ Damn Vulnerable Web Application (DVWA) is a web application that is damn vulnera
 
 The aim of DVWA is to practice some of the most common web vulnerabilities. You are encouraged to try and discover as many issues as possible.
 
+Reposiroty
+`https://github.com/DevSecOpsAt/dvwa-spring.git`
+
 # Prerequisite
 1. Maven
-2. Java 
-2. Docker Container
+2. Java - Java Spring
 
-## Clone
-`https://github.com/DevSecOpsAt/dvwa-spring.git`
+# Support
+1. Vagrant
+2. Docker Container
+3. Jenkins pipeline - build.groovy
 
 ## Build .war
 `mvn -B -f pom.xml install`
@@ -21,26 +25,10 @@ The aim of DVWA is to practice some of the most common web vulnerabilities. You 
 http://localhost:8080
 
 ## Credential
-```
-Username : admin1
-Password : admin1
-```
-```
-Username : admin2
-Password : admin2
-```
-```
-Username : user1
-Password : user1
-```
-```
-Username : user2
-Password : user2
-```
-``
-Username : user3
-Password : user3
-``
-
-
-
+| Username | Password |
+| -- | -- |
+| admin1 | admin1 |
+| admin2 | admin2 |
+| user1 | user1 |
+| user2 | user2 |
+| user3 | user3 |
