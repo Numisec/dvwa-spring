@@ -6,11 +6,11 @@ The aim of DVWA is to practice some of the most common web vulnerabilities. You 
 Reposiroty
 `https://github.com/DevSecOpsAt/dvwa-spring.git`
 
-# Prerequisite
+## Prerequisite
 1. Maven
 2. Java - Java Spring
 
-# Support
+## Support
 1. Vagrant
 2. Docker Container
 3. Jenkins pipeline - build.groovy
