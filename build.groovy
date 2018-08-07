@@ -7,8 +7,11 @@ node {
 			sh ("mvn -B -f pom.xml install")
 		}
 	}
-	stage("Start App"){
-		sh 'ls -al'
+	stage("Build App in docker"){
+		sh 'make build'
+	}
+	stage("Run App in docker"){
+		sh 'make delete && make run'
 	}
 	stage('Spotbugs + FinSecBugs'){
 		sh 'docker run --rm -t -v `pwd`:/dvwa-spring devsecopsat/spotbugs -textui -low -nested:false -quiet -exclude /dvwa-spring/spotbugs/spotbugs-customExcludeFilter.xml -pluginList /findsecbugs-plugin-1.7.1.jar -output /dvwa-spring/reports/spotbugs-dvwa-spring-result.xml  /dvwa-spring/target/www-0.0.1-SNAPSHOT.jar'
